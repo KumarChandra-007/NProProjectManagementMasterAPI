@@ -1,0 +1,6 @@
+@NproProjectManagement.MasterApi_HostAddress = http://localhost:5105
+
+GET {{NproProjectManagement.MasterApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
