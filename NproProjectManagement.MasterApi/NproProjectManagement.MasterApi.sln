@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NproProjectManagement.MasterApi", "NproProjectManagement.MasterApi.csproj", "{8EAD21BD-B080-4880-9C85-BFE23FF7974E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.MasterApi", "NproProjectManagement.MasterApi.csproj", "{8EAD21BD-B080-4880-9C85-BFE23FF7974E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.Common", "..\NproProjectManagement.Common\NproProjectManagement.Common.csproj", "{1DF573E2-A92B-4FE4-A6FB-011FFA8381F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.Repositories", "..\NproProjectManagement.Repositories\NproProjectManagement.Repositories.csproj", "{2A801CDB-A49C-4C84-A975-9417BD9E768F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.Service", "..\NproProjectManagement.Service\NproProjectManagement.Service.csproj", "{75796695-DCB0-41E1-81DA-52D33CAE1085}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{8EAD21BD-B080-4880-9C85-BFE23FF7974E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EAD21BD-B080-4880-9C85-BFE23FF7974E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EAD21BD-B080-4880-9C85-BFE23FF7974E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF573E2-A92B-4FE4-A6FB-011FFA8381F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF573E2-A92B-4FE4-A6FB-011FFA8381F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF573E2-A92B-4FE4-A6FB-011FFA8381F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF573E2-A92B-4FE4-A6FB-011FFA8381F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A801CDB-A49C-4C84-A975-9417BD9E768F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A801CDB-A49C-4C84-A975-9417BD9E768F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A801CDB-A49C-4C84-A975-9417BD9E768F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A801CDB-A49C-4C84-A975-9417BD9E768F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75796695-DCB0-41E1-81DA-52D33CAE1085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75796695-DCB0-41E1-81DA-52D33CAE1085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75796695-DCB0-41E1-81DA-52D33CAE1085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75796695-DCB0-41E1-81DA-52D33CAE1085}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

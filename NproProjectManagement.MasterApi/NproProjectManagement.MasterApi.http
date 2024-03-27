@@ -1,6 +1,6 @@
 @NproProjectManagement.MasterApi_HostAddress = http://localhost:5105
 
-GET {{NproProjectManagement.MasterApi_HostAddress}}/weatherforecast/
+GET {{NproProjectManagement.MasterApi_HostAddress}}/swagger/index.html
 Accept: application/json
 
 ###
