@@ -7,7 +7,7 @@ using Services.Service;
 namespace NproProjectManagement.Controllers
 {
 
-    [Route("api/[controller]")]
+    [Route("masterapi")]
     [ApiController]
     public class MasterController : ControllerBase
     {
