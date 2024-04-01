@@ -11,7 +11,20 @@ using Services.Interface;
 using Services.Service;
 using System.Text;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:4200")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                      });
+});
 //var jwtIssuer = builder.Configuration.GetSection("JWT:Issuer").Get<string>();
 //var jwtKey = builder.Configuration.GetSection("JWT:Secret").Get<string>();
 
@@ -90,6 +103,7 @@ if (app.Environment.IsDevelopment())
 //app.UseSwaggerUI();
 
 // Configure the HTTP request pipeline.
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthentication();
 app.UseAuthorization();
