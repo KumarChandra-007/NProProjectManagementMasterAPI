@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace NproProjectManagement.Common.Entities;
+﻿namespace NproProjectManagement.Common.Entities;
 
 public partial class Status
 {

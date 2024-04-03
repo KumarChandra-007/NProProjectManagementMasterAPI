@@ -1,10 +1,5 @@
-﻿using Common.Models;
+﻿using NproProjectManagement.Common.Entities;
 using Repositories.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repositories.Repository
 {
@@ -23,10 +18,7 @@ namespace Repositories.Repository
             {
                 return role;
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
         public async Task<List<Status>> GetStatusAsync()
@@ -36,10 +28,7 @@ namespace Repositories.Repository
             {
                 return status;
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }

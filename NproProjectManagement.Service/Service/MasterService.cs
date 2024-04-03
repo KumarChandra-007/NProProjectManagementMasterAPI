@@ -1,11 +1,6 @@
 ﻿using Common.ViewModels;
 using Repositories.Interface;
 using Services.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services.Service
 {
@@ -24,8 +19,8 @@ namespace Services.Service
             var result = new List<StatusResponse>();
             var status = await _masterRepository.GetStatusAsync();
             if (status != null)
-            {                
-                foreach(var item in status)
+            {
+                foreach (var item in status)
                 {
                     var res = new StatusResponse();
                     res.StatusId = item.StatusId;
@@ -35,10 +30,7 @@ namespace Services.Service
                 }
                 return result;
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
         public async Task<List<RoleResponse>> GetRoleAsync()
@@ -47,7 +39,7 @@ namespace Services.Service
             var role = await _masterRepository.GetRoleAsync();
             if (role != null)
             {
-                
+
                 foreach (var item in role)
                 {
                     var res = new RoleResponse();
@@ -58,10 +50,7 @@ namespace Services.Service
                 }
                 return result;
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }
